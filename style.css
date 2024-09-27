@@ -1,0 +1,152 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Section */
+.header {
+    background-color:skyblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.header img {
+    display:flex;
+    margin: 0 auto;
+    height:300px;
+    width:300px;
+    
+    
+
+}
+
+
+/* Content Section */
+.content p{
+    text-align: justify;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+  }
+  
+  main {
+    margin: 20px 0;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  
+/* Signup Section */
+.signup {
+    background-color:skyblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.signup form input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.signup form button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.signup form button:hover {
+    background-color: #ff4500;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    margin: 0 auto;
+}
+.feature img {
+    height:400px;
+    width:400px;
+}
+
+/* Responsive Design */
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    .features {
+        flex-direction: column;
+    }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .features {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .signup, .content {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+
+/* Desktop styles */
+@media only screen and (min-width: 901px) {
+    .header, .features, .signup, .content {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    .features {
+        justify-content: space-between;
+    }
+
+    .feature {
+        flex: 1 1 200px;
+        margin: 10px;
+    }
+
+    .signup {
+        order: 2;
+    }
+
+    .content {
+        order: 3;
+        width: 100%;
+        text-align: left;
+    }
+}
+ 
